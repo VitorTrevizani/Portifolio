@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 3%;
+    background-color: #141244;
+}
+
+section{
+    margin-bottom: 5%;
+}
+
+section#sobre-mim{
+   display: flex;
+   justify-content:space-evenly;
+   background-color:#29648C;
+   border-radius: 10px;
+   color: white;
+   padding: 2%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+section#sobre-mim >  img{
+   border-radius: 50%;
+}
+
+section#sobre-mim > #info{
+    width: 50%; 
+}
+
+section#sobre-mim > #info > h1{
+    color:#29848C;
+    margin-bottom: 10px;
+}
+
+section#formacao{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    background-color:#29648C ;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+section#formacao > h1{
+    background-color: #4D298C;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section#formacao > div {
+    padding: 2%;
+}
+
+section#formacao > div > h3 > i{
+    color: rgb(50, 49, 49);
+    margin-right: 15px;
+}
+
+section#skills{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    background-color:#29648C ;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+
+section#skills > h1{
+    background-color: #4D298C;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section#skills > div > span#linguagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section#skills > div > span#linguagens > div{
+    height: 50vh;
+    width: 20vw;
+    margin: 1%;
+    background-color: #2C298C;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 8px yellow;
+}
+
+section#skills > div > span#linguagens > div > p{
+    margin-top:50%;
+}
+
+
+
+/*
+#29458C
+#29648C
+#2C298C
+#29848C
+#4D298C
+*/
+
+
+@media screen and (max-width: 900px){
+   section#sobre-mim{
+        flex-direction: column;
+   }
+
+   section#sobre-mim >  img{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10%;
+   }
+
+   section#sobre-mim > #info{
+       width: 100%;  
+       text-align: center;
+   }
+}
