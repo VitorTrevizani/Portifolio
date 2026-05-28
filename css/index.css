@@ -15,28 +15,40 @@ section{
 }
 
 section#sobre-mim{
-   display: flex;
-   justify-content:space-evenly;
    background-color:#29648C;
    border-radius: 10px;
+}
+
+section#sobre-mim > div#informacoes-pessoais{
+   display: flex;
+   justify-content:space-evenly;
    color: white;
    padding: 2%;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-section#sobre-mim >  img{
+section#sobre-mim > div#informacoes-pessoais >  img{
    border-radius: 50%;
 }
 
-section#sobre-mim > #info{
+section#sobre-mim > div#informacoes-pessoais > #info{
     width: 50%; 
 }
 
-section#sobre-mim > #info > h1{
+section#sobre-mim > div#informacoes-pessoais > #info > h1{
     color:#29848C;
     margin-bottom: 10px;
+}
+
+section#sobre-mim > div#contato{
+    margin-left: 10%;
+}
+
+section#sobre-mim > div#contato > a > i {
+    color:black;
+    padding: 30px;
+    
+   
 }
 
 section#formacao{
@@ -79,14 +91,19 @@ section#skills > h1{
     border-radius: 10px;
 }
 
-section#skills > div > span#linguagens{
+section#skills > div > h3{
+    text-align: center;
+    padding: 4%;
+}
+
+section#skills > div > span{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-section#skills > div > span#linguagens > div{
-    height: 50vh;
+section#skills > div > span > div{
+    height: 40vh;
     width: 20vw;
     margin: 1%;
     background-color: #2C298C;
@@ -95,8 +112,17 @@ section#skills > div > span#linguagens > div{
     box-shadow: 0px 0px 8px yellow;
 }
 
-section#skills > div > span#linguagens > div > p{
-    margin-top:50%;
+section#skills > div > span#linguagens > div{
+    width: 30%;
+}
+
+section#skills > div > span#data-bases > div{
+   width: 50%;
+}
+
+
+section#skills > div > span > div > p{
+    margin-top:20vh;
 }
 
 
@@ -110,19 +136,29 @@ section#skills > div > span#linguagens > div > p{
 */
 
 
+
 @media screen and (max-width: 900px){
-   section#sobre-mim{
+   section#sobre-mim > div#informacoes-pessoais{
         flex-direction: column;
    }
 
-   section#sobre-mim >  img{
+   section#sobre-mim > div#informacoes-pessoais >  img{
         width: 50%;
         margin: auto;
         margin-bottom: 10%;
    }
 
-   section#sobre-mim > #info{
+   section#sobre-mim > div#informacoes-pessoais > #info{
        width: 100%;  
        text-align: center;
+   }
+
+   section#skills > div > span{
+       flex-direction: column;
+   }
+
+   section#skills > div > span > div{
+       width: 100%;
+       
    }
 }
