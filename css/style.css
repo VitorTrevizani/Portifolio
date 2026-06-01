@@ -17,11 +17,12 @@
 } 
 
 .dark{
-    --body-color: #0b02f7;
+    --body-color: #120d99;
     --section-color:#141244;
     --background-color-title: #4D298C;
     --subhead-color:white;
-    --card-color:rgb(2, 195, 195);
+    /* --card-color:rgb(2, 195, 195); */
+    --card-color:#0e0b7d; 
     --icon-color:white;
     --paragrafo:#5a89a9;
     --box-shadow: 0px 0px 0px 0px black;
@@ -41,12 +42,23 @@ body{
 }
 
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--subhead-color);
+    margin: -3.2%;
+    margin-bottom: 4%;
+    
+}
+
 nav > ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 2%;
     list-style-type: none;
+
 }
 
 nav > ul > li > a, i {
@@ -54,6 +66,12 @@ nav > ul > li > a, i {
     text-decoration: none;
     color: white;
 }
+
+#menu-icon{
+    display:none;
+}
+
+
 
 section{
     margin-bottom: 5%;
@@ -252,6 +270,24 @@ footer a{
 
 
 @media screen and (max-width: 900px){
+
+    
+
+    nav > ul{
+        display: block;
+        text-align: center;
+    }
+    
+    .menu-oculto{
+        display: none;
+    }
+
+    #menu-icon{
+        display: block;
+        margin: auto;
+        padding: 7%;
+        
+    }
 
     section{
         margin-bottom: 10%;
