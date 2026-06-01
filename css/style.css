@@ -7,6 +7,7 @@
 
 :root{
     --body-color: #2C298C;
+    --nav-color: #4D298C;
     --section-color:#29648C;
     --background-color-title: #4D298C;
     --subhead-color:#0c0b2d;
@@ -17,15 +18,17 @@
 } 
 
 .dark{
-    --body-color: #120d99;
+    --body-color: #4D298C;
+    --nav-color:#0c0b2d;
     --section-color:#141244;
-    --background-color-title: #4D298C;
+    --background-color-title: #5a89a9;
     --subhead-color:white;
     /* --card-color:rgb(2, 195, 195); */
     --card-color:#0e0b7d; 
     --icon-color:white;
     --paragrafo:#5a89a9;
     --box-shadow: 0px 0px 0px 0px black;
+    --info-footer:white;
 }
 
 /*
@@ -46,10 +49,9 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: var(--subhead-color);
+    background-color: var(--nav-color);
     margin: -3.2%;
     margin-bottom: 4%;
-    
 }
 
 nav > ul{
@@ -58,8 +60,8 @@ nav > ul{
     align-items: center;
     padding: 2%;
     list-style-type: none;
-
 }
+
 
 nav > ul > li > a, i {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -151,6 +153,7 @@ section#skills  h3{
     color:var(--subhead-color);
 }
 
+
 section#skills > div > h3{
     text-align: center;
     padding: 4%;
@@ -184,6 +187,7 @@ section#skills > div > span#data-bases > div{
 section#skills > div > span > div > p{
     margin-top:20vh;
     font-weight: bold;
+    color:aqua;
 }
 
 
@@ -259,6 +263,10 @@ footer > ul > li > ul{
 footer a{
     color: var(--paragrafo);
     text-decoration: none;
+}
+
+footer > p, li{
+    color: var(--info-footer)
 }
 
 
@@ -354,6 +362,7 @@ footer a{
     footer > h3,  ul > *{
         margin-bottom: 5%;
     }
+
 
     footer > ul > li > ul > li{
         padding: 5%;
