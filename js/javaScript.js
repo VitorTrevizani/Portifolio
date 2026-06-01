@@ -1,5 +1,6 @@
-const divs = document.querySelectorAll("section#skills > div > span > div")
+const body = document.getElementById("body")
+const botao = document.getElementById("botao")
 
-// divs.addEventListener("click", (element) => {
-//     console.log(element)
-// })
+botao.addEventListener("click", () => {
+    body.classList.toggle("dark")
+})
