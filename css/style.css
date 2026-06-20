@@ -69,6 +69,12 @@ nav > ul > li > a, i {
     color: white;
 }
 
+
+
+nav > ul > li > a:hover{
+   color: var(--paragrafo);
+}
+
 #menu-icon{
     display:none;
 }
@@ -93,7 +99,9 @@ section#sobre-mim > div#informacoes-pessoais{
 
 section#sobre-mim > div#informacoes-pessoais >  img{
    border-radius: 50%;
+   height: 40vh;
 }
+
 
 section#sobre-mim > div#informacoes-pessoais > #info{
     width: 50%; 
@@ -104,8 +112,13 @@ section#sobre-mim > div#informacoes-pessoais > #info > h1{
     margin-bottom: 4%;
 }
 
+section#sobre-mim > div#informacoes-pessoais > #info > h1 > i{
+    color: var(--body-color)
+}
+
 section#sobre-mim > div#informacoes-pessoais > #info > p{
     color: var(--paragrafo);
+    margin-top:10%;
 }
 
 section#sobre-mim > div#contato{
@@ -119,6 +132,7 @@ section#sobre-mim > div#contato > a > i {
 
 
 
+
 section#formacao > h1{
     background-color: var(--background-color-title);
     padding: 5px;
@@ -127,16 +141,19 @@ section#formacao > h1{
     color:white;
 }
 
-section#formacao  h3{
+section#formacao  h3, h4{
     color:var(--subhead-color);
+    padding: 1%;
+    border-radius: 10px;
 }
+
 
 section#formacao > div {
     padding: 2%;
 }
 
-section#formacao > div > h3 > i{
-    color: rgb(50, 49, 49);
+section#formacao > div > h3 > i, h4 > i{
+    color: var(--paragrafo);
     margin-right: 15px;
 }
 
@@ -173,8 +190,13 @@ section#skills > div > span > div.scene{
     background-color: var(--card-color);
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 0px 8px yellow;
+     box-shadow: 0px 0px 8px black;
     perspective: 600px;
+}
+
+section#skills > div > span > div.scene:hover{
+    scale: 110%;
+    box-shadow: 0px 0px 20px 0px yellow;
 }
 
 section#skills > div > span > div.scene > div.card{
@@ -247,8 +269,11 @@ section#projetos > div > div{
 
 section#projetos > div > button{
     height: 100px;
-    width: 10%;
+    width: 20vw;
     border-radius: 10px;
+    border:none;
+    font-weight: bolder;
+    box-shadow: 0px 0px 15px 0px black;
 }
 
 .scale-in-hor-left {
@@ -266,7 +291,10 @@ section#projetos > div > div > img{
     height: 50vh;
     border-radius: 10px;
     margin-bottom: 5%;
+    box-shadow: 0px 0px 20px 0px black;
+    box-sizing: border-box;
 }
+
 
 
 section#projetos > div > div > div > h3{
@@ -282,6 +310,9 @@ section#projetos > div > div > div > p {
 section#projetos > div > div > div > p > a{
     text-decoration: none;
     color:var(--subhead-color);
+    background-color: var(--body-color);
+    padding: 0.5%;
+    border-radius: 10px;
 }
 
 
@@ -364,6 +395,11 @@ section#projetos > div > div > div > p > a{
   }
 }
 
+@keyframes girar {
+    to{
+        transform:rotate(360deg);
+    }
+}
 
 
 
@@ -411,6 +447,34 @@ footer > p, li{
 
 
 
+@media screen and (min-width: 900px){
+
+    section#sobre-mim > div#informacoes-pessoais >  img:hover{
+        scale: 110%;
+        box-shadow: 0px 0px 20px 0px yellow;
+    }
+
+    section#sobre-mim > div#contato > a > i:hover{
+        animation: girar 2s ease-in-out infinite;
+    }
+
+    section#formacao  h3:hover, h4:hover{
+        scale: 105%;
+        background-color: var(--card-color);
+        color: white;
+    }
+
+    section#projetos > div > div > img:hover{
+        scale:108%;
+    }
+
+    section#projetos > div > div > div > p > a:hover{
+        color:white;
+        background-color: var(--nav-color);
+    }
+}
+
+
 
 
 
@@ -440,6 +504,10 @@ footer > p, li{
         margin-bottom: 10%;
         padding: 3%;
     }
+    
+    h1{
+        font-size:30px;
+    }
 
 
    section#sobre-mim > div#informacoes-pessoais{
@@ -447,7 +515,7 @@ footer > p, li{
    }
 
    section#sobre-mim > div#informacoes-pessoais >  img{
-        width: 50%;
+        width: 100%;
         margin: auto;
         margin-bottom: 10%;
    }
